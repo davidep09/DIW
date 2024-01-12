@@ -1,0 +1,40 @@
+@mixin common-font {
+    text-align: center;
+    cursor: default;
+    font-weight: normal;
+}
+
+h1 {
+    @include common-font;
+    font-family: 'Whisper', sans-serif;
+    color: $colorWhite;
+    font-size: 40px;
+    &:hover {
+        color: $colorClaroPrimario;
+    }
+}
+
+h2 {
+    @include common-font;
+    font-family: 'Merriweather', sans-serif;
+    color: $colorClaroPrimario;
+    font-size: 32px;
+}
+
+h3 {
+    @include common-font;
+    font-family: 'Merriweather', serif;
+    color: $colorWhite;
+    font-size: 18px;
+    font-weight: 600;
+    &:hover {
+        color: $colorClaroPrimario;
+    }
+}
+
+p {
+    @include common-font;
+    font-family: 'Kanit', sans-serif;
+    color: $colorWhite;
+    font-size: 18px;   
+}

@@ -1,0 +1,76 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@500&family=Roboto&family=Whisper&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather&family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@500&family=Roboto&family=Whisper&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600&family=Lato:wght@300&family=Merriweather&family=Montserrat:wght@300&family=Noto+Sans&family=Poppins:wght@500&family=Roboto&family=Whisper&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <h1>Restaurante Ficticio</h1>
+        <ul>
+            <li><a href="index.html"><h3>Inicio</h3></a></li>
+            <li><a href="menu.html"><h3>Menú</h3></a></li>
+            <li><a href="reservas.html"><h3>Reservas</h3></a></li>
+        </ul>
+    </nav>
+
+    <section class="reservas">
+        <h2>Reservas</h2>
+        <form id="form" action="reservas.php" method="POST">
+            <p>Por favor, rellena el siguiente formulario para reservar tu mesa.</p>
+            <label for="nombre"><p>Nombre completo</p></label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <label for="email"><p>Correo electrónico</p></label>
+            <input type="email" name="email" placeholder="Email" required>
+            <label for="telefono"><p>Teléfono de contacto</p></label>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <label for="fecha"><p>Fecha</p></label>
+            <input type="date" name="fecha" required>
+            <label for="fecha"><p>Hora</p></label>
+            <input type="time" name="hora" required>
+            <label for="personas"><p>Personas</p></label>
+            <select name="personas">
+                <option value="1">1 persona</option>
+                <option value="2">2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6 personas</option>
+            </select>
+            <input type="submit" value="Reservar">
+        </form>
+    </section>
+    <footer>
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <div class="footer-text">
+            <h3>Restaurante Galileo</h3>
+            <p>Calle Villabáñez 52, 47012 Valladolid</p>
+            <p>Teléfono: +34 666 666 666</p>
+            <p>Email: info@restaurantegalileo.com</p>
+        </div>
+        <div class="footer-text">
+            <h3>Nuestras redes sociales</h3>
+            <p>Facebook: restaurantegalileo</p>
+            <p>Instagram: restaurantegalileo</p>
+            <p>X: restaurantegalileo</p>
+        </div>
+        <div class="footer-text">
+            <h3>Horarios</h3>
+            <p>De lunes a viernes</p>
+            <p>13:00 - 15:00 y 20:00 - 23:00</p>
+            <p>Sábados, domingos y festivos</p>
+            <p>13:00 - 16:00 y 20:00 - 23:00</p>    
+        </div>
+    </footer>
+</body>
+</html>
