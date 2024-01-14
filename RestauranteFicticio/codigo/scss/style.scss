@@ -1,17 +1,17 @@
-@import 'colors.scss';
-@import 'card.scss';
-@import 'fonts.scss';
+@import 'colors';
+@import 'card';
+@import 'fonts';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: $color1;
+    background-color: $colorOscuroPrimario;
     height: auto;
 }
 
 body {
-    background-color: $color1;
+    background-color: $colorOscuroPrimario;
 }
 
 nav {
@@ -106,7 +106,7 @@ footer {
         border: none;
         border-radius: 5px;
         padding: 0 10px;
-        background-color: white;
+        background-color: $colorWhite;
     }
     input[type="submit"] {
         width: 20%;
@@ -115,14 +115,14 @@ footer {
         border: none;
         border-radius: 5px;
         padding: 0 10px;
-        background-color: $color4;
-        color: $color1;
+        background-color: $colorClaroPrimario;
+        color: $colorOscuroSecundario;
         font-weight: bold;
         font-family: 'Kanit', sans-serif;
         cursor: pointer;
         &:hover {
-            background-color: $color3;
-            color: $color4;
+            background-color: $colorClaroSecundario;
+            color: $colorWhite;
         }
     }
     select{
@@ -132,7 +132,7 @@ footer {
         border: none;
         border-radius: 5px;
         padding: 0 10px;
-        background-color: white;
+        background-color: $colorWhite;
     }
 }
 
@@ -170,4 +170,3 @@ footer {
         }
     }
 }
-

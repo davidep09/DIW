@@ -1,18 +1,218 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |     background-color: $color2;
- *   |                       ^^^^^^^
- *   '
- *   scss/_card.scss 4:23  @import
- *   scss/style.scss 2:9   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color: $color2;\a   \2502                        ^^^^^^^\a   \2575 \a   scss/_card.scss 4:23  @import\a   scss/style.scss 2:9   root stylesheet";
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: #59564F;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
 }
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #1C1C21;
+}
+
+h1 {
+  text-align: center;
+  cursor: default;
+  font-weight: normal;
+  font-family: "Whisper", sans-serif;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+h1:hover {
+  color: #CEBC94;
+}
+
+h2 {
+  text-align: center;
+  cursor: default;
+  font-weight: normal;
+  font-family: "Merriweather", sans-serif;
+  color: #CEBC94;
+  font-size: 32px;
+}
+
+h3 {
+  text-align: center;
+  cursor: default;
+  font-weight: normal;
+  font-family: "Merriweather", serif;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 600;
+}
+h3:hover {
+  color: #CEBC94;
+}
+
+p {
+  text-align: center;
+  cursor: default;
+  font-weight: normal;
+  font-family: "Kanit", sans-serif;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #222126;
+  height: auto;
+}
+
+body {
+  background-color: #222126;
+}
+
+nav img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 1% auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.descripcion {
+  margin: 0 10%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu li {
+  list-style: none;
+}
+
+iframe {
+  border: 0px;
+  border-radius: 5px;
+  width: 85%;
+  height: 300px;
+}
+
+#mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+footer img {
+  width: 100px;
+  height: 100px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 70px;
+}
+footer .footer-text {
+  margin: 20px 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+}
+#form input {
+  width: 40%;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #FFFFFF;
+}
+#form input[type=submit] {
+  width: 20%;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #CEBC94;
+  color: #1C1C21;
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  cursor: pointer;
+}
+#form input[type=submit]:hover {
+  background-color: #59564F;
+  color: #FFFFFF;
+}
+#form select {
+  width: 40%;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 840px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  iframe {
+    width: 100%;
+    margin: 1% auto;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    top: 200px;
+  }
+  footer .footer-text {
+    margin: 20px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

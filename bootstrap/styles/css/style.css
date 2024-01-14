@@ -11855,5 +11855,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar {
+  background-color: red;
+}
+
+.btn-principal {
+  background-color: aquamarine;
+  border-color: aquamarine;
+}
 
 /*# sourceMappingURL=style.css.map */
