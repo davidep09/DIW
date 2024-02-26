@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "card";
+@import "header";
+@import "section";
+@import "nav";
+@import "footer";
+@import "colors";
+@import "button";
+@import "_fonts.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $oscuroPrimario;
+}
+
+main {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+

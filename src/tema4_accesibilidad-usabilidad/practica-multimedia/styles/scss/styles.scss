@@ -1,0 +1,14 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "header";
+@import "card";
+@import "section";
+@import "fonts";
+@import "footer";
+
+* body {
+    background-color: $colorOscuro1;
+}
+
+h1 {
+    color: $colorIntermedio !important;
+}

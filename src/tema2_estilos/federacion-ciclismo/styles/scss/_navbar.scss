@@ -1,0 +1,45 @@
+@import "colors";
+
+.navbar {
+  background-color: $colorPrimario !important;
+
+  img {
+    width: 75px;
+    margin-left: 45px;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+
+    .nav-item {
+      .nav-link {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2em;
+        color: $colorSecundario;
+
+        &:hover {
+          background-color: white;
+          color: $colorPrimario;
+        }
+      }
+
+      .active {
+        color: $colorSecundarioOscuro2;
+      }
+
+      .dropdown-menu {
+        background-color: $colorPrimario;
+
+        .dropdown-item {
+          font-family: "Lora", sans-serif;
+          color: $colorSecundario;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+

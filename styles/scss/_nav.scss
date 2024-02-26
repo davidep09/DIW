@@ -1,0 +1,19 @@
+@import "colors";
+
+nav {
+    background-color: $claroPrimario;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10px;
+
+        &:hover {
+            color: $claroSecundario;
+        }
+    }
+}
+

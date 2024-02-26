@@ -1,0 +1,39 @@
+@import "colors";
+
+#hero {
+    width: 100%;
+    background-color: $colorOscuro2;
+    border-radius: 10px;
+
+
+    h1 {
+        color: white;
+    }
+
+    img {
+        width: 80%;
+        border-radius: 10px;
+    }
+}
+
+#one-column {
+    max-width: 60%;
+    background-color: $colorIntermedio;
+    color: white;
+    border-radius: 10px;
+
+}
+
+
+#multigrid {
+    background-color: $colorOscuro2;
+    border-radius: 10px;
+}
+
+#videos {
+    background-color: $colorOscuro2;
+    border-radius: 10px;
+    h2 {
+      color: $colorIntermedio;
+    }
+}

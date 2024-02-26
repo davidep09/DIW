@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portada</title>
-</head>
-<body>
-    <div class="container">
-        <h1>David Espeso Pastor</h1>
-        <h2>Diseño de Interfaces Web</h2>
-        <ol>
-            <li><a href="planificacion.html">Planificación de interfaces gráficas</a></li>
-            <li>Uso de estilos</li>
-            <li>Implantación de contenido multimedia</li>
-            <li>Integración de contenido interactivo</li>
-            <li>Accesibilidad</li>
-            <li>Usabilidad</li>
-        </ol>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diseño de Interfaces Web</title>
+        <link rel="stylesheet" href="styles/css/styles.css" />
+    </head>
+    <body>
+    <header>
+        <h1>CUADERNO de DISEÑO DE INTERFACES WEB</h1>
+        <h2>elaborado por DAVID ESPESO PASTOR</h2>
+    </header>
+    <main class="pt-5">
+        <section class="container">
+            <ul class="row">
+                <li class="col-md-6">
+                    <a href="src/tema1_planificacion" class="card px-3">
+                        <h2 class="card-title">Planificación de la interfaz de usuario</h2>
+                        <p class="card-text">HTML semántico, layout, teoría del color, tipografía y prototipado.</p>
+                    </a>
+                </li>
+                <li class="col-md-6">
+                    <a href="src/tema2_estilos" class="card px-3">
+                        <h2 class="card-title">Uso de estilos</h2>
+                        <p class="card-text">Flex, Grid, media queries, SASS y Bootstrap.</p>
+                    </a>
+                </li>
+                <li class="col-md-6">
+                    <a href="src/tema3_multimedia" class="card px-3">
+                        <h2 class="card-title">Inserción de contenido multimedia</h2>
+                        <p class="card-text">Licencias, imágenes, video y audio.</p>
+                    </a>
+                </li>
+                <li class="col-md-6">
+                    <a href="src/tema4_accesibilidad-usabilidad" class="card px-3">
+                        <h2 class="card-title">Accesibilidad y usabilidad web</h2>
+                        <p class="card-text">
+                            Diversidad funcional, problemas relacionados, principios fundamentales,
+                            diseño según normas, etc.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center mx-5">
+            Mi nombre es David Espeso Pastor. Soy estudiante de segundo
+            curso de Desarrollo de Aplicaciones Web en el IES Galileo, Valladolid.
+            Puedes contactar conmigo a través de mi perfil de LinkedIn.
+        </p>
+
+        <a href="https://www.linkedin.com/in/espeso12">
+            <img src="assets/icons/linkedin-svgrepo-com.svg" alt="Linkedin">
+        </a>
+    </footer>
+    </body>
 </html>

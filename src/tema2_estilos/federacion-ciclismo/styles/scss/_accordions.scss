@@ -1,0 +1,16 @@
+@import "colors";
+
+.accordion {
+  width: 90%;
+  margin: 0 auto;
+
+  .accordion-button {
+    background-color: $colorPrimarioClaro1;
+  }
+
+  .card {
+    img {
+      height: 400px;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import "colors";
+
+header {
+    nav {
+        .navbar-brand {
+            img {
+                width: 150px;
+            }
+        }
+
+        .nav-link {
+            color: white !important;
+
+            &:hover {
+                color: $colorIntermedio !important;
+            }
+        }
+
+        .active {
+            text-decoration: line-through 3px $colorIntermedio !important;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        nav {
+            height: 100px;
+        }
+    }
+}
